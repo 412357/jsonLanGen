@@ -1,0 +1,12 @@
+[
+    {
+        "key": "greeting",
+        "langs": ["en","es","it"],
+        "trans": ["hello world", "hola mundo", "ciao mondo"]
+    },
+    {
+        "key": "farewell",
+        "langs": ["en","es","it"],
+        "trans": ["goodbye world", "adios mundo", "ciao mondo"]
+    }
+]
