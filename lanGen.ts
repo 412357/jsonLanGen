@@ -27,8 +27,11 @@ function handleData( data:string ){
 
         if (langFiles.hasOwnProperty(key)) {
             let lang = langFiles[key];
-
-            fs.writeFile(`${key}.json`,JSON.stringify( lang,null,2 ), console.error );
+            let dir = path.resolve( __dirname,'i18n' );
+            if( !fs.existsSync(dir) ){
+                fs.mkdirSync(dir);
+            }
+            fs.writeFile(path.join(dir,`${key}.json`),JSON.stringify( lang,null,2 ), console.error );
         }
 
     }
