@@ -1,7 +1,7 @@
 import * as path from 'path';
 import * as fs from 'fs'
 
-fs.readFile(path.resolve(__dirname,'lang.config.json'),'utf8' ,function(err, data){
+fs.readFile(path.resolve(__dirname,'translations.main.json'),'utf8' ,function(err, data){
     if(err){
         return err;
     }
