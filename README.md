@@ -1,6 +1,7 @@
 # jsonLanGen
 ng2-translate language file generator from a single json
 
+## Documentation
 Create a `translations.main.json` file with the following structure:
 ```
 [
@@ -22,5 +23,6 @@ A file will be created for each element of the langs array. The file above will 
 translations.main.json
 i18n
   ├─ en.json
-  └─ es.json
+  ├─ es.json
+  └─ it.json
 ```
